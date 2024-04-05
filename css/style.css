@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://img.freepik.com/premium-vector/abstract-colorful-sales-background-concept_250207-246.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
