@@ -25,3 +25,32 @@ document.addEventListener("DOMContentLoaded", function(){
       }); // addEventListener
     }) // forEach
   }); // DOMContentLoaded  end
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle language
+    document.querySelector('.lang-toggle').addEventListener('click', function () {
+        let currentLanguage = this.getAttribute("data-language");
+        let newLanguage = currentLanguage === 'english' ? 'dutch' : 'english';
+        this.setAttribute("data-language", newLanguage);
+        localStorage.setItem('language', newLanguage);
+        updateLanguage(newLanguage);
+    });
+
+    // Function to update language based on stored value
+    function updateLanguage(language) {
+        document.querySelectorAll('.lang-toggle').forEach(function (element) {
+            let dutchText = element.getAttribute('data-dutch');
+            let englishText = element.getAttribute('data-english');
+            element.textContent = (language === 'english') ? englishText : dutchText;
+        });
+    }
+
+    // Initialize language based on stored value or default to English
+    let currentLanguage = localStorage.getItem('language');
+    if (currentLanguage) {
+        updateLanguage(currentLanguage);
+    } else {
+        localStorage.setItem('language', 'english');
+        updateLanguage('english');
+    }
+});
