@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
               } else {
                   mycollapse.show();
                   // find other submenus with class=show
-                  var opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
+                  let opened_submenu = parentEl.parentElement.querySelector('.submenu.show');
                   // if it exists, then close all of them
                   if(opened_submenu){
                     new bootstrap.Collapse(opened_submenu);
@@ -24,5 +24,4 @@ document.addEventListener("DOMContentLoaded", function(){
           }
       }); // addEventListener
     }) // forEach
-  }); 
-  // DOMContentLoaded  end
+  }); // DOMContentLoaded  end

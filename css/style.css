@@ -16,6 +16,7 @@ body {
 
 main {
     flex: 1;
+    /* Take remaining space */
     position: relative;
     z-index: 1;
 }
