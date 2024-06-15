@@ -31,3 +31,17 @@ main {
     min-height: 100vh;
     background-color: transparent;
 }
+
+.small-carousel {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+

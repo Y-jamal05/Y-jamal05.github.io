@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
@@ -17,15 +17,18 @@
         <nav class="sidebar card py-2 mb-4">
             <ul class="nav flex-column" id="nav_accordion">
                 <li class="nav-item">
-                    <a class="nav-link text-white lang-toggle" href="#" data-language="english" data-dutch="NL" data-english="ENG">NL</a>
+                    <a class="nav-link text-white lang-toggle" href="#" data-language="english" data-dutch="NL"
+                        data-english="ENG">NL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item has-submenu">
-                    <a href="" class="nav-link text-white lang-toggle" data-dutch="projecten" data-english="projects">projecten</a>
+                    <a href="" class="nav-link text-white lang-toggle" data-dutch="projecten"
+                        data-english="projects">projecten</a>
                     <ul class="submenu collapse">
-                        <li><a class="nav-link text-white lang-toggle" href="/html/HL.html" data-dutch="Hoger Lager" data-english="Higher Lower">Hoger Lager</a></li>
+                        <li><a class="nav-link text-white lang-toggle" href="/html/HL.html" data-dutch="Hoger Lager"
+                                data-english="Higher Lower">Hoger Lager</a></li>
                         <li><a class="nav-link text-white" href="/html/escaperoom.html">escaperoom</a></li>
                         <li><a class="nav-link text-white" href="/html/BYG.html">Build your game</a></li>
                         <li><a class="nav-link text-white" href="/html/dashboards.html">Dashboards</a></li>
@@ -41,25 +44,25 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6  m-5">
+                <div class="col-6 mt-5">
                     <div class="row">
                         <h2 class="text-white lang-toggle" data-dutch="Over Mij" data-english="About Me">Over Mij</h2>
                         <div class="col-6 p-2">
                             <p class="text-white lang-toggle"
-                            data-dutch="Hey, mijn naam is Yousef Jamal 
+                                data-dutch="Hey, mijn naam is Yousef Jamal 
                                 Ik ben 18 jaar en ik woon in Den Haag. 
                                 Ik vind het leuk om te gamen en anime te kijken. 
-                                Ik doe de opleiding software developer in Delft, dus ik moet 35/40 min reizen met de scooter om naar school te gaan. 
+                                Ik doe de opleiding software developer in Delft, waarin ik in het eerste jaar leer hoe ik met JavaScript, HTML, CSS en Bootstrap werk, dus ik moet 35/40 min reizen met de scooter om naar school te gaan. 
                                 Ik werk parttime 3/4 keer in de week in een snackbar. 
                                 Dus ik verdien wel terwijl ik naar school ga. 
                                 Ik heb voor deze opleiding gekozen, omdat ik wilde leren hoe ik een website kan maken en beetje ook hoe je kleine leuke spellen kon maken."
-                            data-english="Hey, my name is Yousef Jamal. 
+                                data-english="Hey, my name is Yousef Jamal. 
                                 I'm 18 years old and I live in The Hague. 
                                 I enjoy gaming and watching anime. 
-                                I'm studying software development in Delft, so I have to travel 35/40 minutes by scooter to get to school. 
+                                I'm studying software development in Delft, in which I learn how to work with JavaScript, HTML, CSS and Bootstrap in the first year , so I have to travel 35/40 minutes by scooter to get to school. 
                                 I work part-time at a snack bar 3/4 times a week, so I earn money while attending school. 
                                 I chose this course because I wanted to learn how to create a website and also how to make small fun games.">
-                        </p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -69,16 +72,29 @@
                     </div>
                 </div>
             </div>
+            <div class="container d-flex">
+                <div class="row">
+                    <div id="carouselExample" class="carousel slide small-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/img/js.png" class="d-block w-100 transparent-img" alt="Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/html.png" class="d-block w-100 transparent-img" alt="Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/css.png" class="d-block w-100 transparent-img" alt="Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/bootstrap.png" class="d-block w-100 transparent-img" alt="Image 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
