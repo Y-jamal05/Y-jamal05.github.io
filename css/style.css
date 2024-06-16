@@ -1,91 +1,97 @@
+/* Reset default styles and set box-sizing */
 * {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    box-sizing: border-box;
 }
 
+/* Body styles for background and layout */
 body {
     background-image: linear-gradient(315deg, rgba(145, 0, 255, 1) 10%, rgba(0, 5, 255, 1) 20%, rgba(0, 255, 252, 1) 40%, rgba(0, 159, 255, 1) 50%, rgba(0, 255, 252, 1) 60%, rgba(0, 5, 255, 1) 80%, rgba(145, 0, 255, 1) 90%);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
     display: flex;
-    flex-direction: row;
-    /* Displaying nav and main in a row */
+    min-height: 100vh; /* Ensure full viewport coverage */
 }
 
+/* Header styles */
+header {
+    z-index: 2; /* Ensure header is above main content */
+}
+
+/* Main content styles */
 main {
-    flex: 1;
-    /* Take remaining space */
+    flex: 1; /* Take remaining vertical space */
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Ensure main content is above background */
+    padding: 20px; /* Add padding for spacing */
 }
 
+/* Sidebar styles */
 .sidebar {
+    position: sticky;
+    top: 0;
     border: none;
-    z-index: 2;
+    z-index: 3; /* Ensure sidebar is above main content */
     width: 200px;
-    /* Adjust width as needed */
     flex-direction: column;
-    /* Display items in a column */
     min-height: 100vh;
     background-color: transparent;
 }
 
+/* Small carousel styles (adjust as needed) */
 .small-carousel {
     max-width: 300px;
     margin: 0 auto;
 }
 
+/* Hide carousel items by default */
 .carousel-item {
     display: none;
 }
 
+/* Display active carousel item */
 .carousel-item.active {
     display: block;
 }
 
+/* Dashboard picture styles */
 .dashboard-pic {
     width: 50%;
 }
 
+/* Card styles for kleurenschema and sitemap */
 .card-ks {
-    width: 650px;
-    height: 350px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
+/* Modal styles */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    z-index: 4; /* Sit on top of everything */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%;
+    height: 100%;
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    padding-top: 100px; /* Position modal content */
+}
+
+/* Modal image content styles */
+.modal-content {
     margin: auto;
     display: block;
     max-width: 1000px;
-  }
-  
-  /* Caption of Modal Image */
-  #caption {
+    max-height: 90vh; /* Adjust as needed */
+    object-fit: contain; /* Ensure image fits within modal */
+}
+
+/* Caption of Modal Image styles */
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -93,29 +99,25 @@ main {
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
+}
+
+/* Animation styles for modal zoom effect */
+.modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Close button styles */
+.close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -123,11 +125,12 @@ main {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+/* Hover and focus styles for close button */
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
+}
