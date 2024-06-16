@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Dashboards</title>
+    <title>Home</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Bootstrap CSS v5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
@@ -17,23 +17,26 @@
         <nav class="sidebar card py-2 mb-4">
             <ul class="nav flex-column" id="nav_accordion">
                 <li class="nav-item">
-                    <a class="nav-link text-white lang-toggle" href="#" data-language="english" data-dutch="NL" data-english="ENG">NL</a>
+                    <a class="nav-link text-white lang-toggle" href="#" data-language="english" data-dutch="NL"
+                        data-english="ENG">NL</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item has-submenu">
-                    <a href="" class="nav-link text-white lang-toggle" data-dutch="projecten" data-english="projects">projecten</a>
-                    <ul class="submenu collapse">
-                        <li><a class="nav-link text-white lang-toggle" href="HL.html" data-dutch="Hoger Lager" data-english="Higher Lower">Hoger Lager</a></li>
-                        <li><a class="nav-link text-white" href="escaperoom.html">escaperoom</a></li>
-                        <li><a class="nav-link text-white" href="BYG.html">Build your game</a></li>
-                        <li><a class="nav-link text-white" href="dashboards.html">Dashboards</a></li>
+                    <a class="nav-link text-white lang-toggle collapsed" href="#submenu1" data-bs-toggle="collapse" data-bs-target="#submenu1"
+                        data-dutch="projecten" data-english="projects">projecten</a>
+                    <ul class="submenu collapse" id="submenu1">
+                        <li><a class="nav-link text-white lang-toggle" href="/html/HL.html" data-dutch="Hoger Lager"
+                                data-english="Higher Lower">Hoger Lager</a></li>
+                        <li><a class="nav-link text-white" href="/html/escaperoom.html">escaperoom</a></li>
+                        <li><a class="nav-link text-white" href="/html/BYG.html">Build your game</a></li>
+                        <li><a class="nav-link text-white" href="/html/dashboards.html">Dashboards</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link text-white" href="/html/portfolio.html">Portfolio</a></li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.html"> Contact</a>
+                    <a class="nav-link text-white" href="/html/contact.html"> Contact</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +46,7 @@
             <div class="row">
                 <div class="col-6  m-5">
                     <div class="row">
-                        <div class="text-white">Dashboards</div>
+                        <div class="text-white lang-toggle" data-dutch="Hoger Lager" data-english="Higher Lower">Hoger Lager</div>
                         <div class="col-6 p-2">
                             <p class="text-white"></p>
                         </div>
