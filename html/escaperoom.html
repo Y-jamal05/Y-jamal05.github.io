@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Escape Room</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS v5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
 
 <body>
@@ -36,22 +39,33 @@
                 </li>
                 <li><a class="nav-link text-white" href="/html/portfolio.html">Portfolio</a></li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/html/contact.html"> Contact</a>
+                    <a class="nav-link text-white" href="/html/contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6  m-5">
-                    <div class="row">
-                        <div class="text-white lang-toggle" data-dutch="Hoger Lager" data-english="Higher Lower">Hoger Lager</div>
-                        <div class="col-6 p-2">
-                            <p class="text-white"></p>
-                        </div>
-                    </div>
-                </div>
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <h1 class="lang-toggle" data-dutch="Escape room" data-english="Escape room">Escape room</h1>
+            </div>
+            <div class="col-10 text-center mb-4">
+                <img src="/img/escaperoom1-pic.jpg" alt="escaperoom" class="img-fluid">
+            </div>
+            <div class="col-10 text-center mb-4">
+                <a href="https://github.com/ROCMondriaanTIN/sd23-p02-escaperoom-aarde-plat" class="fw-bold text-decoration-none text-black">GitHub Link</a>
+            </div>
+            <div class="col-10 text-center fw-bold m-1">
+                <p class="lang-toggle fw-bold"
+                    data-dutch="We moesten met een groepje van 3 een escape room maken in een week.
+                    Ieder persoon maakte zijn eigen kamer, dus 1 iemand de eerste kamer de andere maakte de tweede kamer en ik maakte de laatste kamer, 
+                    dus als je langs die drie kamers bent gekomen zonder dood te gaan bij de laatste dan heb je officieel de escaperoom verlaten.
+                    Dit was wel een leuke opdracht, want je leert dan hoe je ook samen met andere kunt werken om samen een code te schrijven en te maken."
+                    data-english="We had to make an escape room in a week with a group of 3.
+                    Each person made their own room, so one person made the first room, the other made the second room, and I made the last room, 
+                    so if you passed those three rooms without dying in the last one then you officially left the escape room.
+                    This was a fun assignment because you learn how to work together with others to write and create code.">
+                </p>
             </div>
         </div>
     </main>
@@ -62,6 +76,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 
