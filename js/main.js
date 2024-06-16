@@ -70,3 +70,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     startSlideshow();
 });
+
+// Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the images and the modal image element
+let kleurenschemaImg = document.getElementById("kleurenschemaImg");
+let sitemapImg = document.getElementById("sitemapImg");
+let modalImg = document.getElementById("modalImg");
+let captionText = document.getElementById("caption");
+
+// Function to open modal with the correct image and caption
+function openModal(imgElement) {
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    captionText.innerHTML = imgElement.alt;
+}
+
+// Attach click event handlers to both images
+kleurenschemaImg.onclick = function () {
+    openModal(this);
+}
+
+sitemapImg.onclick = function () {
+    openModal(this);
+}
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
